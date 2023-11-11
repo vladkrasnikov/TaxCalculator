@@ -1,0 +1,11 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=02821447_002D46a0_002D42fd_002D904a_002De48715bccf49/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TaxIncomeControllerTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::C95BDE17-076E-4AC3-9717-CCC1EDB09A08::net7.0::TaxCalculator.Tests.Controllers.TaxIncomeControllerTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::C95BDE17-076E-4AC3-9717-CCC1EDB09A08::net7.0::TaxCalculator.Tests.Services.TaxSalaryCalculatorServiceTests.CalculateTaxesAsync_ReceiveGrossAnnualSalary_ReturnTaxIncomeWithProperGrossAnnualSalary&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::C95BDE17-076E-4AC3-9717-CCC1EDB09A08::net7.0::TaxCalculator.Tests.Services.TaxSalaryCalculatorServiceTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=8720ae45_002D0dfa_002D475f_002D9320_002Db7a309267bdb/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Solution /&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

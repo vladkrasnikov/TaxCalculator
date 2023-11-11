@@ -1,0 +1,14 @@
+C:\Users\Vladyslav_Krasnikov\source\repos\TaxCalculator\TaxCalculator.Data\bin\Debug\net7.0\TaxCalculator.Data.deps.json
+C:\Users\Vladyslav_Krasnikov\source\repos\TaxCalculator\TaxCalculator.Data\bin\Debug\net7.0\TaxCalculator.Data.dll
+C:\Users\Vladyslav_Krasnikov\source\repos\TaxCalculator\TaxCalculator.Data\bin\Debug\net7.0\TaxCalculator.Data.pdb
+C:\Users\Vladyslav_Krasnikov\source\repos\TaxCalculator\TaxCalculator.Data\obj\Debug\net7.0\TaxCalculator.Data.csproj.AssemblyReference.cache
+C:\Users\Vladyslav_Krasnikov\source\repos\TaxCalculator\TaxCalculator.Data\obj\Debug\net7.0\TaxCalculator.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladyslav_Krasnikov\source\repos\TaxCalculator\TaxCalculator.Data\obj\Debug\net7.0\TaxCalculator.Data.AssemblyInfoInputs.cache
+C:\Users\Vladyslav_Krasnikov\source\repos\TaxCalculator\TaxCalculator.Data\obj\Debug\net7.0\TaxCalculator.Data.AssemblyInfo.cs
+C:\Users\Vladyslav_Krasnikov\source\repos\TaxCalculator\TaxCalculator.Data\obj\Debug\net7.0\TaxCalculator.Data.csproj.CoreCompileInputs.cache
+C:\Users\Vladyslav_Krasnikov\source\repos\TaxCalculator\TaxCalculator.Data\obj\Debug\net7.0\TaxCalculator.Data.dll
+C:\Users\Vladyslav_Krasnikov\source\repos\TaxCalculator\TaxCalculator.Data\obj\Debug\net7.0\refint\TaxCalculator.Data.dll
+C:\Users\Vladyslav_Krasnikov\source\repos\TaxCalculator\TaxCalculator.Data\obj\Debug\net7.0\TaxCalculator.Data.pdb
+C:\Users\Vladyslav_Krasnikov\source\repos\TaxCalculator\TaxCalculator.Data\obj\Debug\net7.0\ref\TaxCalculator.Data.dll
+C:\Users\Vladyslav_Krasnikov\source\repos\TaxCalculator\TaxCalculator.Data\bin\Debug\net7.0\TaxCalculator.Data.runtimeconfig.json
+C:\Users\Vladyslav_Krasnikov\source\repos\TaxCalculator\TaxCalculator.Data\obj\Debug\net7.0\TaxCalculator.Data.genruntimeconfig.cache

@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\TaxCalculator.API\TaxCalculator.API.csproj" />
+      <ProjectReference Include="..\TaxCalculator.Infrastructure\TaxCalculator.Infrastructure.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FluentAssertions" Version="6.12.0" />
+      <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+      <PackageReference Include="MockQueryable.Moq" Version="7.0.0" />
+      <PackageReference Include="Moq" Version="4.20.69" />
+      <PackageReference Include="xunit" Version="2.6.1" />
+    </ItemGroup>
+
+</Project>
