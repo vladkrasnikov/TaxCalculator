@@ -23,6 +23,15 @@ public class TaxSalaryCalculatorServiceTests
 
     #region Theory Data
 
+    public static IList<object[]> ServiceData =>
+        new List<object[]>
+        {
+            new object[]
+            {
+                null,
+            },
+        };
+    
     public static IList<object[]> CalculateTaxData =>
         new List<object[]>
         {
@@ -100,6 +109,18 @@ public class TaxSalaryCalculatorServiceTests
 
     #endregion
 
+    [Theory]
+    [MemberData(nameof(ServiceData))]
+    public void TaxSalaryCalculatorService_ReceiveNullContext_ThrowArgumentNullException(ITaxCalculatorContext taxCalculatorContext)
+    {
+        // Act
+        var ex = Record.Exception(() => new TaxSalaryCalculatorService(taxCalculatorContext));
+
+        // Assert
+        Assert.NotNull(ex);
+        Assert.Equal(typeof(ArgumentNullException), ex.GetType());
+    }
+    
     [Theory]
     [MemberData(nameof(CalculateTaxData))]
     public async Task CalculateTaxesAsync_ReceiveGrossAnnualSalary_ReturnTaxIncomeWithProperGrossAnnualSalary(

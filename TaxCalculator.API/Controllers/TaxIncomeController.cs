@@ -13,7 +13,7 @@ public class TaxIncomeController : ControllerBase
 
     public TaxIncomeController(ITaxSalaryCalculatorService taxSalaryCalculatorService)
     {
-        _taxSalaryCalculatorService = taxSalaryCalculatorService;
+        _taxSalaryCalculatorService = taxSalaryCalculatorService ?? throw new ArgumentNullException(nameof(taxSalaryCalculatorService));
     }
 
     [HttpPost]

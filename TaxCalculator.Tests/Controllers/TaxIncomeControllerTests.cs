@@ -11,11 +11,23 @@ public class TaxIncomeControllerTests
 {
     private readonly Mock<ITaxSalaryCalculatorService> _salaryCalculatorServiceMock;
     private readonly TaxIncomeController _taxIncomeController;
-    
+
     public TaxIncomeControllerTests()
     {
         _salaryCalculatorServiceMock = new Mock<ITaxSalaryCalculatorService>();
         _taxIncomeController = new TaxIncomeController(_salaryCalculatorServiceMock.Object);
+    }
+
+    [Fact]
+    public void TaxIncomeController_ReceiveNullService_ThrowArgumentNullException()
+    {
+        ITaxSalaryCalculatorService? salaryCalculatorService = null;
+        // Act
+        var ex = Record.Exception(() => new TaxIncomeController(salaryCalculatorService));
+
+        // Assert
+        Assert.NotNull(ex);
+        Assert.Equal(typeof(ArgumentNullException), ex.GetType());
     }
 
     [Fact]
@@ -34,15 +46,14 @@ public class TaxIncomeControllerTests
             MonthlyTaxPaid = annualTaxPaid / 12
         };
         _salaryCalculatorServiceMock.Setup(x => x.CalculateIncomeTaxAsync(grossAnnualSalary)).ReturnsAsync(taxIncome);
-        var controller = (_salaryCalculatorServiceMock.Object);
-        
+
         // Act
-        var result = await controller.CalculateIncomeTaxAsync(grossAnnualSalary);
-        
+        var result = await _taxIncomeController.CalculateIncomeTax(grossAnnualSalary);
+
         // Assert
         Assert.Equal(taxIncome, result);
     }
-    
+
     [Fact]
     public async Task GetTaxIncomeAsync_ReceiveGrossAnnualSalary_ReturnTaxIncomeWithProperGrossMonthlySalary()
     {
@@ -71,11 +82,10 @@ public class TaxIncomeControllerTests
             }
         };
         _salaryCalculatorServiceMock.Setup(x => x.GetHistoryAsync()).ReturnsAsync(taxHistoryList);
-        var controller = (_salaryCalculatorServiceMock.Object);
-        
+
         // Act
-        var result = await controller.GetHistoryAsync();
-        
+        var result = await _taxIncomeController.GetHistory();
+
         // Assert
         Assert.Equal(taxHistoryList, result);
     }
